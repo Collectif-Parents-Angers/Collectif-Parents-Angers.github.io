@@ -37,7 +37,23 @@ The above copyright notice and this permission notice shall be included in all c
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="/">
-          Collectif des parents d'élèves élus de la ville d'Angers</a>
+          Accueil</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/cantine">
+          Cantine</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/cours">
+          Cours d'école</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -132,7 +148,7 @@ The above copyright notice and this permission notice shall be included in all c
           </div>
           <div class="section text-center">
               <h2 class="title">Dernières actions</h2>
-              <div class="team">
+              <!-- <div class="team">
                   <div class="row">
                       <div class="col-6 mt-4" ">
                           <h4>Action 1</h4>
@@ -155,11 +171,99 @@ The above copyright notice and this permission notice shall be included in all c
                           <div>Depuis 2017, nous effectuons travail de veille, de recensement et de remontée aux services de la Ville des problèmes en lien avec la voirie, la signalisation, le stationnement et la mobilité en général à proximité des école.</div>
                       </div>
                   </div>
-              </div>
+              </div> -->
+              <div class="row">
+                <div class="col-md-8 offset-md-2">
+                
+                    <div class="card card-nav-tabs card-plain">
+                        <div class="card-header card-header-danger">
+                            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                            <div class="nav-tabs-navigation">
+                                <div class="nav-tabs-wrapper">
+                                    <ul class="nav nav-tabs" data-tabs="tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#atsem" data-toggle="tab">Postes d'ATSEM</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#violence" data-toggle="tab">Violences scolaires</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#resto" data-toggle="tab">Restauration</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#voirie" data-toggle="tab">Voirie et Mobilité</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <div class="tab-content text-center">
+                                <div class="tab-pane active" id="atsem">
+                                    <p>Nous avons rédigé plusieurs synthèses des difficultés rencontrées suite à la disparition de postes d'ATSEM, et questionné les élus sur la gestion RH de ces postes et sur l'accueil des enfants en bas âge</p>
+                                </div>
+                                <div class="tab-pane" id="violence">
+                                    <p> Nous rencontrons régulièrement les élus municipaux et la Direction Éducation Enfance en vue de la mise en place d'un groupe de réflexion élus/parents/Éducation Nationale sur les violences scolaires.</p>
+                                </div>
+                                <div class="tab-pane" id="resto">
+                                    <p> Nous interpellons depuis longtemps l'ex-EPARC, désormais Papillotes et Cie, sur la part du bio et du local notamment. Nous avons reçu la directrice en réunion, visité la cuisine centrale, rencontré les élus en charge du dossier. Nous avons obtenu le remplacement de la vaisselle plastique à la rentrée 2019/2020. Et nous avons désormais un représentant qui siège au comité consultatif de la nouvelle structure juridique.</p>
+                                </div>
+                                <div class="tab-pane" id="voirie">
+                                    <p>Depuis 2017, nous effectuons travail de veille, de recensement et de remontée aux services de la Ville des problèmes en lien avec la voirie, la signalisation, le stationnement et la mobilité en général à proximité des école.</p>
+                                </div>
+                            </div>
+                        </div>
+  
+                    </div>
+                </div>
+            </div>
+  
           </div>
           <div class="section text-center">
-              <h2 class="title">Projets à venir</h2>
-              <div class="team">
+              <h2 class="title">Projets en cours</h2>
+              <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                  <div class="profile-tabs">
+                    <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#cantine" role="tab" data-toggle="tab">
+                          <i class="material-icons">food_bank</i> Cantine
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#cours" role="tab" data-toggle="tab">
+                          <i class="material-icons">emoji_nature</i> Cours d'Ecole
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content tab-space text-center">
+                <div class="tab-pane active gallery" id="cantine">
+                  <div class="row">
+                    <div class="col-md-6 text-center">
+                      Phrase résumé Cantine
+                      <br>
+                      <a class="navbar-brand" href="/cantine">
+                        En savoir plus</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane gallery" id="cours">
+                  <div class="row">
+                    <div class="col-md-6 text-center">
+                      Phrase résumé Cours
+                      <br>
+                      <a class="navbar-brand" href="/cours">
+                        En savoir plus</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+          </div>
+           <!-- <div class="team">
                   <div class="row">
                       <div class="col-6">
                           <h4>Projet 1</h4>
@@ -173,53 +277,8 @@ The above copyright notice and this permission notice shall be included in all c
                       </div>
                   </div>
               </div>
-          </div>
-          <div class="row">
-              <div class="col-md-8 offset-md-2">
-              
-                  <div class="card card-nav-tabs card-plain">
-                      <div class="card-header card-header-danger">
-                          <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                          <div class="nav-tabs-navigation">
-                              <div class="nav-tabs-wrapper">
-                                  <ul class="nav nav-tabs" data-tabs="tabs">
-                                      <li class="nav-item">
-                                          <a class="nav-link active" href="#atsem" data-toggle="tab">Postes d'ATSEM</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="#violence" data-toggle="tab">Violences scolaires</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="#resto" data-toggle="tab">Restauration</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="#voirie" data-toggle="tab">Voirie et Mobilité</a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card-body ">
-                          <div class="tab-content text-center">
-                              <div class="tab-pane active" id="atsem">
-                                  <p>Nous avons rédigé plusieurs synthèses des difficultés rencontrées suite à la disparition de postes d'ATSEM, et questionné les élus sur la gestion RH de ces postes et sur l'accueil des enfants en bas âge</p>
-                              </div>
-                              <div class="tab-pane" id="violence">
-                                  <p> Nous rencontrons régulièrement les élus municipaux et la Direction Éducation Enfance en vue de la mise en place d'un groupe de réflexion élus/parents/Éducation Nationale sur les violences scolaires.</p>
-                              </div>
-                              <div class="tab-pane" id="resto">
-                                  <p> Nous interpellons depuis longtemps l'ex-EPARC, désormais Papillotes et Cie, sur la part du bio et du local notamment. Nous avons reçu la directrice en réunion, visité la cuisine centrale, rencontré les élus en charge du dossier. Nous avons obtenu le remplacement de la vaisselle plastique à la rentrée 2019/2020. Et nous avons désormais un représentant qui siège au comité consultatif de la nouvelle structure juridique.</p>
-                              </div>
-                              <div class="tab-pane" id="voirie">
-                                  <p>Depuis 2017, nous effectuons travail de veille, de recensement et de remontée aux services de la Ville des problèmes en lien avec la voirie, la signalisation, le stationnement et la mobilité en général à proximité des école.</p>
-                              </div>
-                          </div>
-                      </div>
-
-                  </div>
-              </div>
-          </div>
-
+          </div> -->
+          
               <div class="section section-contacts">
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto">
@@ -237,8 +296,6 @@ The above copyright notice and this permission notice shall be included in all c
                       </div>
                   </div>
               </div>
-
-
           </div>
   </div>
   <footer class="footer footer-default">
