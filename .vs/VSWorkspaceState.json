@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\demo",
+    "\\assets\\img"
   ],
+  "SelectedNode": "\\cours.html",
   "PreviewInSolutionExplorer": false
 }
