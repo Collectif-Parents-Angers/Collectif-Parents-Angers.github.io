@@ -36,30 +36,35 @@
         // The location of Uluru
         const markers = [
           { pos: { lat: 47.4586467, lng: -0.5525333 }, title: "Condorcet"},
-            { pos: { lat: 47.4788215, lng: -0.5388081 }, title: "Victor Hugo" },
-            { pos: { lat: 47.4742255, lng: -0.5930975 }, title: "Aldo Ferraro" },
-            { pos: { lat: 47.4596388, lng: -0.9580018 }, title: "René Brossard" },
-            { pos: { lat: 47.4736637, lng: -0.5251913 }, title: "Parcheminerie" },
-            { pos: { lat: 47.4931516, lng: -0.5632786 }, title: "Nelson Mandela" },
-            { pos: { lat: 47.46747, lng: -0.5636695 }, title: "La Blanchereaie" },
-            { pos: { lat: 47.450073, lng: -0.5431426 }, title: "Les Grandes Maulevries" }, 
-            { pos: { lat: 47.4532157, lng: -0.5654555 }, title: "Charles Benier" }, 
-            { pos: { lat: 47.4899956, lng: -0.5787851 }, title: "Réné Gasnier" }, 
-            { pos: { lat: 47.4623222, lng: -0.5406508 }, title: "Lebas" }, 
-            { pos: { lat: 47.4458656, lng: -0.5682306 }, title: "Jules Verne" }, 
-            { pos: { lat: 47.4797613, lng: -0.6023111 }, title: "Pierre Et Marie Curie" }, 
-            { pos: { lat: 47.4884265, lng: -0.5694866 }, title: "Gérard Philipe" }, 
-            { pos: { lat: 47.4721806, lng: -0.5517712 }, title: "Cussoneau" }, 
-            { pos: { lat: 47.4435462, lng: - 0.5622897 }, title: "Claude Monet" }, 
-            { pos: { lat: 47.4816692, lng: -0.5273562 }, title: "Henri Chiron" }, 
-            { pos: { lat: 47.4753647, lng: -0.5676393 }, title: "Descartes" }, 
-            { pos: { lat: 47.4741537, lng: -0.56604 }, title: "Grégoire Bordillon" }, 
-            { pos: { lat: 47.4886023, lng: -0.5164196 }, title: "Alfred de Musset" }, 
+          { pos: { lat: 47.4788215, lng: -0.5388081 }, title: "Victor Hugo" },
+          { pos: { lat: 47.4742255, lng: -0.5930975 }, title: "Aldo Ferraro" },
+          { pos: { lat: 47.4596388, lng: -0.9580018 }, title: "René Brossard" },
+          { pos: { lat: 47.4736637, lng: -0.5251913 }, title: "Parcheminerie" },
+          { pos: { lat: 47.4931516, lng: -0.5632786 }, title: "Nelson Mandela" },
+          { pos: { lat: 47.46747, lng: -0.5636695 }, title: "La Blanchereaie" },
+          { pos: { lat: 47.450073, lng: -0.5431426 }, title: "Les Grandes Maulevries" }, 
+          { pos: { lat: 47.4532157, lng: -0.5654555 }, title: "Charles Benier" }, 
+          { pos: { lat: 47.4899956, lng: -0.5787851 }, title: "Réné Gasnier" }, 
+          { pos: { lat: 47.4623222, lng: -0.5406508 }, title: "Lebas" }, 
+          { pos: { lat: 47.4458656, lng: -0.5682306 }, title: "Jules Verne" }, 
+          { pos: { lat: 47.4797613, lng: -0.6023111 }, title: "Pierre Et Marie Curie" }, 
+          { pos: { lat: 47.4884265, lng: -0.5694866 }, title: "Gérard Philipe" }, 
+          { pos: { lat: 47.4721806, lng: -0.5517712 }, title: "Cussoneau" }, 
+          { pos: { lat: 47.4435462, lng: - 0.5622897 }, title: "Claude Monet" }, 
+          { pos: { lat: 47.4816692, lng: -0.5273562 }, title: "Henri Chiron" }, 
+          { pos: { lat: 47.4753647, lng: -0.5676393 }, title: "Descartes" }, 
+          { pos: { lat: 47.4741537, lng: -0.56604 }, title: "Grégoire Bordillon" }, 
+          { pos: { lat: 47.4886023, lng: -0.5164196 }, title: "Alfred de Musset" }, 
+          { pos: { lat: 47.4645429, lng: -0.5438125 }, title: "Alfred Clément" },
+          { pos: { lat: 47.4762155, lng: -0.5877555 }, title: "Robert Desnos" },
+          { pos: { lat: 47.4482944, lng: -0.5568219 }, title: "Marcel Pagnol" },
+          { pos: { lat: 47.4536167, lng: -0.5295178 }, title: "Adrien Tigeot" },
+          { pos: { lat: 47.4741501, lng: -0.5660347 }, title: "Grégoire Bordillon" },
         ]
         // The map, centered at Uluru
         const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 13,
-          center: markers[0].pos,
+          zoom: 12,
+          center: {lat: 47.4721806, lng: -0.5517712},
         });
         // The marker, positioned at Uluru
         for (const mk of markers) {
@@ -189,8 +194,11 @@
           </div>
         </div>
         <div class="row">
-          <h2 class="title">Écoles représentées</h2>
-          <div id="map" style="height: 400px; width: 90%;" class="mx-auto"></div>
+          <div class="col-12 text-center">
+            <h2 class="title">Écoles représentées</h2>
+            <p>Plusieurs écoles d'Angers sont représentées à travers les membres du collectif.</p>
+            <div id="map" style="height: 400px; width: 90%;" class="mx-auto"></div>
+          </div>
         </div>
       </div>
     </div>
